@@ -14,7 +14,7 @@ import org.springframework.security.web.SecurityFilterChain;
 @EnableWebSecurity
 @RequiredArgsConstructor
 public class SecurityConfiguration {
-    private static final String[] WHITE_LIST_URL = {"/order/**",
+    private static final String[] WHITE_LIST_URL = {"/orders/**",
             "/swagger-ui.html"};
     private static final String[] ADMIN_URL = {"/users/all", "/users/info/**", "/users/delete"};
     @Bean
